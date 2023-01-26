@@ -2,15 +2,18 @@
   System font stack used as base sans-serif and monospace
   https://css-tricks.com/snippets/css/system-font-stack/
 */
-$font-serif-family:
-  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica,
-  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-mono-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+/*
+  Fonts 
+*/
+$font-arial-family: Arial, system-ui, -apple-system, Roboto, sans-serif;
+$font-calibri-family: Calibri, system-ui, -apple-system, Roboto, sans-serif; 
+$font-ultraWide-family: "UltramonoWide-Regular";
 
 /*
   Themes fonts
 */
-$font-base-family: $font-serif-family;
+$font-base-family: $font-arial-family;
 
 /*
 * Breakpoints
@@ -23,6 +26,5 @@ $media-desktop: 1200px;
 /*
 * Colors
 */
-
-$color-bg: #fff;
-$color-text: #151515;
+$color-header: #000000c2;
+$color-header-bg: linear-gradient(90deg, #82c91f 0%, #c6e39e 43%, #eefcda 50%, #c6e39e 57%, #82c91f 100%);
