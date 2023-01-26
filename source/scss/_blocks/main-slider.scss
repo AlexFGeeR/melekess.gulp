@@ -6,6 +6,14 @@
         width: 80%;
         height: 700px;
 
+        @media (max-width: $media-tablet-landscape) {
+            height: 400px;
+        }
+
+        @media (max-width: $media-phone) {
+            height: 300px;
+        }
+
         &-slide {
             opacity: 0.4;
 
