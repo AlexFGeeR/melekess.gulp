@@ -73,6 +73,13 @@ ul {
     align-items: center;
     margin-top: 20px;
     margin-bottom: 40px;
+
+    @media (max-width: $media-desktop) {
+      flex-direction: column;
+      margin: 0 auto;
+      gap: 15px;
+      margin-bottom: 45px;
+    }
   }
   
 
@@ -81,8 +88,10 @@ ul {
     color: #474c56;
     font-family: $font-ultraWide-family;
     font-size: 30px;
-    margin-right: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
+    text-align: center;
     align-items: center;
 
     &::before {
