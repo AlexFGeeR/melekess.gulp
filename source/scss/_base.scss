@@ -73,6 +73,7 @@ ul {
     align-items: center;
     margin-top: 20px;
     margin-bottom: 40px;
+    padding: 25px 50px 25px 50px;
 
     @media (max-width: $media-desktop) {
       flex-direction: column;
