@@ -110,5 +110,39 @@
         }
     }
 
+    &__cooperations {
+        display: flex;
+        justify-content: space-between;
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+
+            &-title {
+                color: #fff;
+            }
+        }
+
+        &-item {
+            width: 300px;
+            height: 300px;
+
+            &-img {
+                background-color: #474c56;
+            }
+        }
+
+        &-main-partners {
+            display: flex;
+            gap: 30px;
+        }
+
+        &-img {
+            &:nth-child(2) {
+                height: 240px;
+            }
+        }
+    }
+
     padding: 0 0 100px 0;
 }
