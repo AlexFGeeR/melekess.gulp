@@ -24,6 +24,23 @@
           <h2 class="excursions__title section-title uppercase">Экскурсии</h2>
           <a href="#" class="excursions__link">Посмотреть все места</a>
         </div>
+        <ul class="excursions__list">
+          @@include("blocks/excursions-item.html", {
+            "img": "./img/content/excursions_1.jpg",
+            "title": "Выставка «Нескучное валяние»",
+            "desc": "Выставка авторского войлока С. В. Шемякиной в рамках проекта «Народный мастер Белгородской области»."
+          })
+          @@include("blocks/excursions-item.html", {
+            "img": "./img/content/excursions_2.jpg",
+            "title": "Выставка «Нескучное валяние»",
+            "desc": "Выставка авторского войлока С. В. Шемякиной в рамках проекта «Народный мастер Белгородской области»."
+          })
+          @@include("blocks/excursions-item.html", {
+            "img": "./img/content/excursions_3.jpg",
+            "title": "Выставка «Нескучное валяние»",
+            "desc": "Выставка авторского войлока С. В. Шемякиной в рамках проекта «Народный мастер Белгородской области»."
+          })
+        </ul>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

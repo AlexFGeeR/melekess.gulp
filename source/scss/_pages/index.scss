@@ -15,12 +15,21 @@
 }
 
 .excursions {
+    background-color: #ebecec;
+
     &__header {
-        max-width: 58%;
+        max-width: 60%;
         display: flex;
         justify-content: space-between;
         margin-left: auto;
         align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
     }
 
     &__link {

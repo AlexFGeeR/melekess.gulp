@@ -18,10 +18,11 @@
   Import all other blocks
 */
 @import "_blocks/header";
-@import "_blocks/main-slider.scss";
+@import "_blocks/main-slider";
+@import "_blocks/excursions-item";
 
 
 /* 
   Import all pages
 */
-@import "_pages/index.scss";
+@import "_pages/index";
