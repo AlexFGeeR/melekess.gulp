@@ -16,18 +16,11 @@
 
 .excursions {
     background-color: #ebecec;
-
-    &__header {
-        max-width: 60%;
-        display: flex;
-        justify-content: space-between;
-        margin-left: auto;
-        align-items: center;
-    }
+    padding-bottom: 80px;
 
     &__list {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         gap: 40px;
         flex-wrap: wrap;
     }
@@ -40,17 +33,29 @@
     }
 
     &__title {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-
         &::before {
-            display: block;
-            content: "";
             background-image: url("../../img/icons/excursions.png");
-            background-size: 63px 63px;
-            width: 63px;
-            height: 63px;
         }
+    }
+}
+
+.online-turism {
+    &__header {
+        max-width: 65%;
+    }
+
+    &__title::before {
+        background-image: url("../../img/icons/online-turism.png");
+    }
+
+    &__link {
+        padding: 10px 35px;
+        background-color: #3873b9;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    &__img {
+        width: 100%;
     }
 }
