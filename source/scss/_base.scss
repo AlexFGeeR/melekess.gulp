@@ -66,20 +66,31 @@ ul {
 .section {
 
   &__header {
-    max-width: 60%;
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    padding: 25px 50px 25px 50px;
+
+    @media (max-width: $media-tablet) {
+      grid-template-rows: repeat(2, 100px);
+    }
+
+    
+    &-link {
+      height: fit-content;
+      width: fit-content;
+      margin-left: auto;
+      
+      @media (max-width: $media-tablet) {
+        margin: 0 auto;
+        grid-column-start: 2;
+        grid-row-start: 2;
+      }
+    }
 
     @media (max-width: $media-desktop) {
       flex-direction: column;
-      margin: 0 auto;
+      margin: 45px auto;
       gap: 15px;
-      margin-bottom: 45px;
     }
   }
   
@@ -95,9 +106,10 @@ ul {
     text-align: center;
     align-items: center;
 
+    grid-column-start: 2;
+
     &::before {
       display: block;
-      margin-right: 20px;
       content: "";
       background-size: 63px 73px;
       width: 63px;

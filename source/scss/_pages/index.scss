@@ -45,15 +45,16 @@
 }
 
 .online-turism {
-    &__header {
-        max-width: 65%;
-    }
+    // &__header {
+    //     max-width: 65%;
+    // }
 
     &__title::before {
         background-image: url("../../img/icons/online-turism.png");
     }
 
     &__link {
+        display: block;
         padding: 10px 35px;
         background-color: #3873b9;
         color: #fff;
