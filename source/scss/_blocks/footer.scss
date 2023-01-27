@@ -1,4 +1,114 @@
 .footer {
     background-color: #67ad45;
     
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        &-primary {
+            display: flex;
+            gap: 20px;
+        }
+
+        &-btn {
+            background-color: #e73331;
+            color: #fff;
+            width: 300px;
+            padding: 15px 0;
+            font-weight: 700;
+        }
+
+        &-link {
+            color: #fff;
+            font-size: 20px;
+            margin-right: 15%;
+        }
+    }
+
+    &__about-us {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+
+
+        &-socials {
+            margin: 0 auto;
+            width: fit-content;
+            grid-column-start: 2;
+
+            &-title {
+                color: #fff;
+                font-size: 24px;
+                font-weight: 400;
+            }
+
+            &-list {
+                margin-top: 10px;
+                display: flex;
+                gap: 20px;
+            }
+        }
+
+        &-contacts {
+            margin: 0 auto;
+            
+            &-title {
+                color: #fff;
+                font-weight: 400;
+                font-size: 20px;
+            }
+
+            &-list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            &-link {
+                color: #fff;
+                font-weight: 100;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+
+                &-email::before {
+                    content: "";
+                    background-image: url("../../img/icons/header__email.png");
+                    background-size: 28px 11px;
+                    width: 28px;
+                    height: 11px;
+                    display: block;
+                    margin-right: 5px;
+                }
+                
+                &-phone::before {
+                    content: "";
+                    background-image: url("../../img/icons/header__phone.png");
+                    background-size: 15px 15px;
+                    width: 15px;
+                    height: 15px;
+                    display: block;
+                    margin: 0 6px 0 12px;
+                }
+
+                &-geo::before {
+                    content: "";
+                    background-image: url("../../img/icons/header__phone.png");
+                    background-size: 15px 15px;
+                    width: 15px;
+                    height: 15px;
+                    display: block;
+                    margin: 0 6px 0 12px;
+                }
+            }
+        }
+    }
+
+    padding: 0 0 100px 0;
 }
