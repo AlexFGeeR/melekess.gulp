@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    @@include("blocks/header.html", {
+        "excursions-active": "header__nav-list-link_active",
+    })
+    <main class="main">
+        <section class="excursions excursions_gray container">
+            <h2 class="hidden">Экскурсии</h2>
+            <div class="section__header section__header_extended">
+              <h2 class="excursions__title section__title uppercase">Экскурсии</h2>
+              <a href="#" class="excursions__link section__header-link">Посмотреть все места</a>
+              <p class="excursions__subtitle uppercase">Маршруты, аудиогиды</p>
+            </div>
+            <ul class="excursions__list">
+              @@include("blocks/excursions-item.html", {
+                "img": "./img/content/excursions_1.jpg",
+                "title": "Выставка «Нескучное валяние»",
+                "desc": "Выставка авторского войлока С. В. Шемякиной в рамках проекта «Народный мастер Белгородской области»."
+              })
+              @@include("blocks/excursions-item.html", {
+                "img": "./img/content/excursions_2.jpg",
+                "title": "Выставка «Нескучное валяние»",
+                "desc": "Выставка авторского войлока С. В. Шемякиной в рамках проекта «Народный мастер Белгородской области»."
+              })
+              @@include("blocks/excursions-item.html", {
+                "img": "./img/content/excursions_3.jpg",
+                "title": "Выставка «Нескучное валяние»",
+                "desc": "Выставка авторского войлока С. В. Шемякиной в рамках проекта «Народный мастер Белгородской области»."
+              })
+              @@include("blocks/excursions-item.html", {
+                "img": "./img/content/excursions_3.jpg",
+                "title": "Выставка «Нескучное валяние»",
+                "desc": "Выставка авторского войлока С. В. Шемякиной в рамках проекта «Народный мастер Белгородской области»."
+              })
+              @@include("blocks/excursions-item.html", {
+                "img": "./img/content/excursions_2.jpg",
+                "title": "Выставка «Нескучное валяние»",
+                "desc": "Выставка авторского войлока С. В. Шемякиной в рамках проекта «Народный мастер Белгородской области»."
+              })
+              @@include("blocks/excursions-item.html", {
+                "img": "./img/content/excursions_1.jpg",
+                "title": "Выставка «Нескучное валяние»",
+                "desc": "Выставка авторского войлока С. В. Шемякиной в рамках проекта «Народный мастер Белгородской области»."
+              })
+              @@include("blocks/excursions-item.html", {
+                "img": "./img/content/excursions_3.jpg",
+                "title": "Выставка «Нескучное валяние»",
+                "desc": "Выставка авторского войлока С. В. Шемякиной в рамках проекта «Народный мастер Белгородской области»."
+              })
+              @@include("blocks/excursions-item.html", {
+                "img": "./img/content/excursions_3.jpg",
+                "title": "Выставка «Нескучное валяние»",
+                "desc": "Выставка авторского войлока С. В. Шемякиной в рамках проекта «Народный мастер Белгородской области»."
+              })
+              @@include("blocks/excursions-item.html", {
+                "img": "./img/content/excursions_3.jpg",
+                "title": "Выставка «Нескучное валяние»",
+                "desc": "Выставка авторского войлока С. В. Шемякиной в рамках проекта «Народный мастер Белгородской области»."
+              })
+            </ul>
+          </section>
+    </main>
+</body>
+</html>
