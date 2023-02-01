@@ -92,6 +92,23 @@ ul {
       margin: 45px auto;
       gap: 15px;
     }
+
+    &_extended {
+      grid-template-rows: repeat(2, 1fr);
+
+      .section__header-link {
+        display: none;
+      }
+
+      .excursions__subtitle {
+        text-align: center;
+        font-size: 32px;
+        font-family: $font-calibri-family;
+        color: #474c56;
+        grid-row-start: 2;
+        grid-column-start: 2;
+      }
+    }
   }
   
 

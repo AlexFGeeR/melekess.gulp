@@ -15,8 +15,11 @@
 }
 
 .excursions {
-    background-color: #ebecec;
     padding-bottom: 80px;
+
+    &_gray {
+        background-color: #ebecec;
+    }
 
     &__list {
         display: flex;

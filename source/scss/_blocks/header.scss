@@ -195,6 +195,17 @@
                     margin-bottom: 10px;
                 }
 
+                &_active {
+                    font-size: 18px;
+                    font-weight: 700;
+
+                    &::before {
+                        width: 65px;
+                        height: 70px;
+                        background-size: 65px 70px;
+                    }
+                }
+
                 &:active,
                 &:hover,
                 &:focus {
