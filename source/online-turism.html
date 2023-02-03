@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Мелекесс - Online-туризм</title>
+</head>
+<body>
+    @@include("blocks/header.html", {
+        "excursions-active": "",
+        "city-active": "",
+        "games-active": "",
+        "turims-active": "header__nav-list-link_active",
+    })
+    <main class="main">
+        <section class="online-turism_extended container">
+            <h2 class="hidden">Online-туризм</h2>
+            <div class="section__header container">
+              <h2 class="online-turism__title section__title uppercase">Онлайн-туризм</h2>
+            </div>
+            <div class="online-turism__list">
+                @@include("blocks/rounded-list-item.html", {
+                    "class": "online-turism__list-item",
+                    "imgAlt": "Картинка на которой изображены множество вопросительных знаков.",
+                    "imgSrc": "./img/online-turism/virtual_excursions.jpg",
+                    "text": "Виртуальные экскурсии",
+                    "href": "#",
+                })
+                @@include("blocks/rounded-list-item.html", {
+                    "class": "online-turism__list-item",
+                    "imgAlt": "Картинка на которой изображены множество вопросительных знаков.",
+                    "imgSrc": "./img/online-turism/performances.jpg",
+                    "text": "Спектакли-онлайн",
+                    "href": "#",
+                })
+                @@include("blocks/rounded-list-item.html", {
+                    "class": "online-turism__list-item",
+                    "imgAlt": "Картинка на которой изображены множество вопросительных знаков.",
+                    "imgSrc": "./img/online-turism/concerts.jpg",
+                    "text": "Концерты-онлайн",
+                    "href": "#",
+                })
+                @@include("blocks/rounded-list-item.html", {
+                    "class": "online-turism__list-item",
+                    "imgAlt": "Картинка на которой изображены множество вопросительных знаков.",
+                    "imgSrc": "./img/online-turism/camers.jpg",
+                    "text": "Web-камеры",
+                    "href": "#",
+                })
+                @@include("blocks/rounded-list-item.html", {
+                    "class": "online-turism__list-item",
+                    "imgAlt": "Картинка на которой изображены множество вопросительных знаков.",
+                    "imgSrc": "./img/online-turism/virtual_excursions.jpg",
+                    "text": "Программы ДимГрад24",
+                    "href": "#",
+                })
+                @@include("blocks/rounded-list-item.html", {
+                    "class": "online-turism__list-item",
+                    "imgAlt": "Картинка на которой изображены множество вопросительных знаков.",
+                    "imgSrc": "./img/online-turism/our_time.jpg",
+                    "text": "Программы ДимТВ",
+                    "href": "#",
+                })
+            </div>
+        </section>
+    </main>
+    @@include("blocks/footer.html");
+</body>
+</html>

@@ -117,6 +117,10 @@
     &__nav {
         margin-top: 35px;
 
+        &-text {
+            text-align: center;
+        }
+
         &-list {
             display: flex;
             justify-content: center;

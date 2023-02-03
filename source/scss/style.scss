@@ -88,13 +88,13 @@
   }
 
   &__list {
-    padding: 0 250px;
-    margin-top: 40px;
     display: flex;
     justify-content: center;
     column-gap: 129px;
     row-gap: 40px;
     flex-wrap: wrap;
+    margin: 40px auto 0 auto;
+    max-width: 1200px;
   }
 }
 
@@ -115,6 +115,15 @@
           font-size: 14px;
           text-align: center;
       }
+  }
+
+  &__list {
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 125px;
   }
 
   &__img {
