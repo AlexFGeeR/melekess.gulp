@@ -22,9 +22,111 @@
 @import "_blocks/excursions-item";
 @import "_blocks/footer";
 @import "_blocks/location";
+@import "_blocks/rounded-list-item";
 
+.promo-video {
+  width: 100%;
+  height: 850px;
+  margin: 75px auto;
+  display: flex;
+  justify-content: center;
 
-/* 
-  Import all pages
-*/
-@import "_pages/index";
+  &__frame {
+      width: 100%;
+  }
+
+  @media (max-width: $media-tablet-landscape) {
+      height: 400px;
+  }
+}
+
+.excursions {
+  padding-bottom: 80px;
+
+  &_grey {
+      background-color: #ebecec;
+  }
+
+  &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+
+      &_grey {
+          padding-top: 40px;
+          padding-bottom: 40px;
+          background-color: #ebecec;
+      }
+  }
+
+  &__link {
+      padding: 10px 25px;
+      background-color: #67ad45;
+      font-weight: 700;
+      color: #fff;
+
+      @media (max-width: $media-tablet) {
+          font-size: 14px;
+          text-align: center;
+      }
+  }
+
+  &__title {
+      &::before {
+          background-image: url("../../img/icons/excursions.png");
+      }
+  }
+}
+
+.games {
+  &__title {
+    &::before {
+      background-image: url("../../img/icons/games.png");
+    }
+  }
+
+  &__list {
+    padding: 0 250px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    column-gap: 129px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+  }
+}
+
+.online-turism {
+
+  &__title::before {
+      background-image: url("../../img/icons/online-turism.png");
+  }
+
+  &__link {
+      display: block;
+      padding: 10px 35px;
+      background-color: #3873b9;
+      color: #fff;
+      font-weight: 700;
+
+      @media (max-width: $media-tablet) {
+          font-size: 14px;
+          text-align: center;
+      }
+  }
+
+  &__img {
+      width: 100%;
+      height: 50%;
+  }
+}
+
+.locations__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
