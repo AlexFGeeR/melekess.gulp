@@ -12,14 +12,14 @@
         "excursions-active": "header__nav-list-link_active",
     })
     <main class="main">
-        <section class="excursions excursions_gray container">
+        <section class="excursions">
             <h2 class="hidden">Экскурсии</h2>
-            <div class="section__header section__header_extended">
+            <div class="section__header section__header_extended container">
               <h2 class="excursions__title section__title uppercase">Экскурсии</h2>
               <a href="#" class="excursions__link section__header-link">Посмотреть все места</a>
               <p class="excursions__subtitle uppercase">Маршруты, аудиогиды</p>
             </div>
-            <ul class="excursions__list">
+            <ul class="excursions__list excursions__list_grey container">
               @@include("blocks/excursions-item.html", {
                 "img": "./img/content/excursions_1.jpg",
                 "title": "Выставка «Нескучное валяние»",
@@ -68,5 +68,6 @@
             </ul>
           </section>
     </main>
+    @@include("blocks/footer.html")
 </body>
 </html>

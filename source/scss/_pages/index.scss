@@ -17,7 +17,7 @@
 .excursions {
     padding-bottom: 80px;
 
-    &_gray {
+    &_grey {
         background-color: #ebecec;
     }
 
@@ -25,7 +25,14 @@
         display: flex;
         justify-content: space-between;
         gap: 40px;
+        margin-top: 40px;
         flex-wrap: wrap;
+
+        &_grey {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #ebecec;
+        }
     }
 
     &__link {

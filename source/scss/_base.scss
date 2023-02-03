@@ -69,7 +69,6 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-
     @media (max-width: $media-tablet) {
       grid-template-rows: repeat(2, 100px);
     }
@@ -95,6 +94,10 @@ ul {
 
     &_extended {
       grid-template-rows: repeat(2, 1fr);
+
+      @media(max-width: $media-tablet) {
+        gap: 0;
+      }
 
       .section__header-link {
         display: none;
