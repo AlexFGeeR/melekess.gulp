@@ -1,0 +1,16 @@
+.rounded-list-item {
+    &__link {
+        color: #474c56;
+    }
+
+    &__img {
+        display: block;
+        border-radius: 35px;
+        border: 5px solid #67ad45;
+    }
+
+    &__text {
+        margin-top: 15px;
+        text-align: center;
+    }
+}

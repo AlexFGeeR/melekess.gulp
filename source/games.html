@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Мелекесс - Игры</title>
+</head>
+<body>
+    @@include("blocks/header.html", {
+        "games-active": "header__nav-list-link_active",
+        "city-active": "",
+        "excursions-active": "",
+    });
+    <main class="main">
+        <section class="games container">
+            <h2 class="hidden">Экскурсии</h2>
+            <div class="section__header">
+              <h2 class="games__title section__title uppercase">Игры</h2>
+              <a href="#" class="games__link hidden section__header-link">Посмотреть все места</a>
+            </div>
+            <ul class="games__list">
+                @@include("blocks/rounded-list-item.html", {
+                    "class": "games__list-item",
+                    "imgAlt": "Картинка на которой изображены множество вопросительных знаков.",
+                    "imgSrc": "./img/games/test_on_knowledge.jpg",
+                    "text": "Тест на знания",
+                    "href": "#",
+                })
+                @@include("blocks/rounded-list-item.html", {
+                    "class": "games__list-item",
+                    "imgAlt": "Картинка на которой изображены два очень похожих объекта",
+                    "imgSrc": "./img/games/find_difference.jpg",
+                    "text": "Найди отличия",
+                    "href": "#",
+                })
+                @@include("blocks/rounded-list-item.html", {
+                    "class": "games__list-item",
+                    "imgAlt": "Картинка на которой изображена библиотека",
+                    "imgSrc": "./img/games/words_from_words.jpg",
+                    "text": "Слова из слов",
+                    "href": "#",
+                })
+                @@include("blocks/rounded-list-item.html", {
+                    "class": "games__list-item",
+                    "imgAlt": "Изображена одна из достопримечательностей города.",
+                    "imgSrc": "./img/games/how_it_was.jpg",
+                    "text": "Как это было",
+                    "href": "#",
+                })
+                @@include("blocks/rounded-list-item.html", {
+                    "class": "games__list-item",
+                    "imgAlt": "Картинка с изображенными на ней часами.",
+                    "imgSrc": "./img/games/numbers.jpg",
+                    "text": "Чиселки",
+                    "href": "#",
+                })
+                @@include("blocks/rounded-list-item.html", {
+                    "class": "games__list-item",
+                    "imgAlt": "Картинка на которой изображены письма и старые пергаменты.",
+                    "imgSrc": "./img/games/mystery_of_history.jpg",
+                    "text": "Загадки истории",
+                    "href": "#",
+                })
+            </ul>
+        </section>
+    </main>
+    @@include("blocks/footer.html")
+</body>
+</html>
