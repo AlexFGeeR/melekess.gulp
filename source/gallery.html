@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Мелекесс - Галерея</title>
+</head>
+<body>
+    @@include("blocks/header.html", {
+        "excursions-active": "",
+        "city-active": "",
+        "games-active": "",
+        "turims-active": "",
+        "gallery-active": "header__nav-list-link_active",
+    })
+    <main class="main container">
+        <section class="gallery">
+            <h2 class="hidden">Галерея</h2>
+            <div class="section__header container">
+              <h2 class="gallery__title section__title uppercase">Галерея</h2>
+            </div>
+            <ul class="gallery__list">
+                @@include("blocks/img-link.html", {
+                    "text": "Музеи",
+                    "customClass": "gallery__list-item",
+                    "imgSrc": "./img/gallery/museum.jpg"
+                })
+                @@include("blocks/img-link.html", {
+                    "text": "События",
+                    "customClass": "gallery__list-item",
+                    "imgSrc": "./img/gallery/events.jpg"
+                })
+                @@include("blocks/img-link.html", {
+                    "text": "Природа",
+                    "customClass": "gallery__list-item",
+                    "imgSrc": "./img/gallery/nature.jpg"
+                })
+                @@include("blocks/img-link.html", {
+                    "text": "Памятники",
+                    "customClass": "gallery__list-item",
+                    "imgSrc": "./img/gallery/monuments.jpg"
+                })
+                @@include("blocks/img-link.html", {
+                    "text": "Город",
+                    "customClass": "gallery__list-item",
+                    "imgSrc": "./img/gallery/city.jpg"
+                })
+                @@include("blocks/img-link.html", {
+                    "text": "История",
+                    "customClass": "gallery__list-item",
+                    "imgSrc": "./img/gallery/history.jpg"
+                })
+            </ul>
+        </section>
+    </main>
+    @@include("blocks/footer.html")
+</body>
+</html>

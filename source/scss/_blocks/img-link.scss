@@ -1,0 +1,23 @@
+.image-link {
+    position: relative;
+
+    &__link {
+        color: #000;
+    }
+
+    &__img {
+        @media (max-width: $media-tablet) {
+            width: 250px;
+            height: 150px;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        display: block;
+        background-color: #ffffffc2;
+        text-align: center;
+    }
+}
