@@ -24,6 +24,8 @@
 @import "_blocks/location";
 @import "_blocks/rounded-list-item";
 @import "_blocks/img-link";
+@import "_blocks/news-item";
+
 
 .promo-video {
   width: 100%;
@@ -154,4 +156,29 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
+}
+
+.news {
+  &__title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    color: #474c56;
+    font-family: $font-ultraWide-family;
+    font-size: 30px;
+    &::before {
+      display: block;
+      content: "";
+      background-size: 63px 73px;
+      width: 63px;
+      height: 73px;
+      background-image: url("../img/icons/news.png");
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
 }
