@@ -179,6 +179,9 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+    background-color: #e1e0e0;
   }
 }
