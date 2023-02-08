@@ -233,6 +233,25 @@
   }
 }
 
+.history-facts {
+  &__btn {
+    display: none;
+  }
+
+  &__content {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+  }
+}
+
+
+#period-btn-1:checked ~ #period-content-1 {
+  display: block;
+}
+
 .economic {
   margin-top: 50px;
   &__title {
