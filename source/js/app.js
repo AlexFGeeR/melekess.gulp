@@ -33,13 +33,11 @@ switch(location.pathname) {
     case '/about-city.html': {
       const contents = [...document.querySelectorAll('.history-facts__content')];
       const btns = [...document.querySelectorAll('.history-facts__btn')];
-      const wrapper = document.querySelector('.history-facts__content-wrapper');
-
+      
       for (let i = 0; i < btns.length; i++ ) {
         btns[i].addEventListener('click', () => {
           clearContent();
           const content = document.querySelector(`#period-content-${i+1}`);
-          wrapper.style.backgroundColor = "#ebecec";
           content.classList.add('history-facts__content_active');
         })
       }
