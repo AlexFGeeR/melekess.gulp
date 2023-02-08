@@ -200,3 +200,58 @@
     gap: 20px;
   }
 }
+
+// About city page
+.city-facts {
+  &__title {
+    font-size: 28px;
+    color: #474c56;
+    font-family: $font-calibri-family;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    background-color: #67ad45;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 60px;
+    justify-content: center;
+    padding: 40px 14%;
+  }
+
+  &__inner-wrapper {
+    width: 365px;
+  }
+
+  &__text {
+    font-family: $font-calibri-family;
+    font-weight: 100;
+    text-align: center;
+  }
+}
+
+.economic {
+  margin-top: 50px;
+  &__title {
+    font-size: 28px;
+    color: #474c56;
+    font-family: $font-calibri-family;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-areas: 
+                        "a c d"
+                        "b c f";
+
+    &-img:first-child() {
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+  }
+}
