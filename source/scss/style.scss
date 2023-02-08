@@ -234,22 +234,73 @@
 }
 
 .history-facts {
-  &__btn {
-    display: none;
+  display: flex;
+  justify-content: space-between;
+
+  label {
+    max-width: 280px;
   }
 
   &__content {
+    padding: 60px 0 0 20%;
+    color: #474c56;
+    font-weight: 100;
+    &-text {
+      margin: 20px;
+    }
+
+    &-wrapper {
+      width: 65%;
+    }
+
+    &-title {
+      margin: 0 0 50px auto;
+      color: #474c56;
+      text-align: end;
+      max-width: 400px;
+    }
+  }
+
+  &__btn {
     display: none;
+    font-weight: 100;
+
+    &-wrapper {
+      font-family: $font-calibri-family;
+      font-size: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 35%;
+      padding: 60px 0 0 10%;
+
+
+      &-title {
+        font-family: $font-ultraWide-family;
+        // font-weight: 1000; // todo
+        max-width: 162px;
+        font-size: 26px;
+        color: #3873b9;
+      }
+    }
+  }
+
+  
+
+  #period-btn-1:checked~label[for=period-btn-1],
+  #period-btn-2:checked~label[for=period-btn-2],
+  #period-btn-3:checked~label[for=period-btn-3],
+  #period-btn-4:checked~label[for=period-btn-4],
+  #period-btn-5:checked~label[for=period-btn-5],
+  #period-btn-6:checked~label[for=period-btn-6],
+  #period-btn-7:checked~label[for=period-btn-7],
+  #period-btn-8:checked~label[for=period-btn-8] {
+    font-weight: 700;
   }
 
   label {
     cursor: pointer;
   }
-}
-
-
-#period-btn-1:checked ~ #period-content-1 {
-  display: block;
 }
 
 .economic {
