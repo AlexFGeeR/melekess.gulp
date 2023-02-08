@@ -244,7 +244,13 @@
   &__content {
     padding: 60px 0 0 20%;
     color: #474c56;
+    display: none;
     font-weight: 100;
+
+    &_active {
+      display: block;
+    }
+
     &-text {
       margin: 20px;
       font-size: 20px;

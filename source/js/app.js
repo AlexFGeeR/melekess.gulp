@@ -35,20 +35,18 @@ switch(location.pathname) {
       const btns = [...document.querySelectorAll('.history-facts__btn')];
       const wrapper = document.querySelector('.history-facts__content-wrapper');
 
-      clearContent();
-
       for (let i = 0; i < btns.length; i++ ) {
         btns[i].addEventListener('click', () => {
           clearContent();
           const content = document.querySelector(`#period-content-${i+1}`);
           wrapper.style.backgroundColor = "#ebecec";
-          content.style.display = 'block';
+          content.classList.add('history-facts__content_active');
         })
       }
 
       function clearContent() {
         for (let content of contents) {
-          content.style.display = "none";
+          content.classList.remove('history-facts__content_active');
         }
       }
 
