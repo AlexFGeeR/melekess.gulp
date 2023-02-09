@@ -427,13 +427,31 @@
 }
 
 .additional-info {
+  margin-top: 50px;
   &__list {
     display: flex;
+    justify-content: center;
+    gap: 40px;
   }
 
   &__list-item:nth-child(1) {
     .additional-info__list-item-meta {
       background-color: #67ad45;
+    }
+  }
+
+  &__list-item:nth-child(2) {
+    .additional-info__list-item-meta {
+      background-color: #e73331;
+    }
+  }
+  
+  &__list-item:nth-child(3) {
+    .additional-info__list-item-wrapper-img {
+      width: 100%;
+    }
+    .additional-info__list-item-meta {
+      background-color: #f4b601;
     }
   }
 }
