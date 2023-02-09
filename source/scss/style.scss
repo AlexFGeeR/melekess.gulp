@@ -25,6 +25,8 @@
 @import "_blocks/rounded-list-item";
 @import "_blocks/img-link";
 @import "_blocks/news-item";
+@import "_blocks/additional-info-item";
+
 
 
 .promo-video {
@@ -421,6 +423,18 @@
 
   label {
     cursor: pointer;
+  }
+}
+
+.additional-info {
+  &__list {
+    display: flex;
+  }
+
+  &__list-item:nth-child(1) {
+    .additional-info__list-item-meta {
+      background-color: #67ad45;
+    }
   }
 }
 
