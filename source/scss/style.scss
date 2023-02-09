@@ -214,6 +214,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    row-gap: 20px;
     .about-city__inner-wrapper {
       display: flex;
       flex-direction: column;
@@ -237,6 +238,8 @@
     display: flex;
     gap: 20px;
     max-width: 760px;
+    justify-content: center;
+    flex-wrap: wrap;
 
     &-paragraph {
       margin-bottom: 20px;
@@ -260,6 +263,12 @@
       color: #474c56;
       font-family: $font-ultraWide-family;
       font-size: 30px;
+
+      @media (max-width: $media-tablet-landscape) {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
       &::before {
         display: block;
         content: "";
