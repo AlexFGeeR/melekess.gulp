@@ -26,6 +26,7 @@
 @import "_blocks/img-link";
 @import "_blocks/news-item";
 @import "_blocks/additional-info-item";
+@import "_blocks/personalies__tabs-item";
 
 
 
@@ -205,6 +206,7 @@
 
 // About city page
 .about-city {
+  // todo make smaller text on phone
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
@@ -541,4 +543,29 @@
       }
     }
   }
+}
+
+// Personalies page
+.personalies {
+  &__title {
+    background-color: #fff;
+    padding-bottom: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    color: #474c56;
+    font-family: $font-ultraWide-family;
+    font-size: 30px;
+    &::before {
+      display: block;
+      content: "";
+      background-size: 63px 73px;
+      width: 63px;
+      height: 73px;
+      background-image: url("../img/icons/personalities.png");
+    }
+  }
+
+  
 }

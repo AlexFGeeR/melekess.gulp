@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Мелекесс - Персоналии</title>
+</head>
+<body>
+    @@include("blocks/header.html", {
+        "excursions-active": "",
+        "city-active": "",
+        "games-active": "",
+        "turims-active": "",
+        "gallery-active": "",
+        "news-active": "",
+        "personalies-active": "header__nav-list-link_active",
+    });
+
+    <main class="main">
+        <section class="personalies">
+            <h1 class="personalies__title uppercase">Персоналии</h1>
+            <div class="personalies__tabs">
+                <ul class="personalies__tabs-btn-list container">
+                    @@include("blocks/personalies__tabs-item.html", {
+                        "id": "personalies__tabs-btn-1",
+                        "title": "A",
+                    })
+                    @@include("blocks/personalies__tabs-item.html", {
+                        "id": "personalies__tabs-btn-2",
+                        "title": "Б",
+                    })
+                    @@include("blocks/personalies__tabs-item.html", {
+                        "id": "personalies__tabs-btn-3",
+                        "title": "В",
+                    })
+                    @@include("blocks/personalies__tabs-item.html", {
+                        "id": "personalies__tabs-btn-4",
+                        "title": "Г",
+                    })
+                    @@include("blocks/personalies__tabs-item.html", {
+                        "id": "personalies__tabs-btn-5",
+                        "title": "Д",
+                    })
+                </ul>
+                <ul class="personalies__tabs-content-list container">
+                    <li class="personalies__tabs-content-list-item undotted">
+                        <p class="personalies__tabs-content-list-item-paragraph">                            
+                            Абдрахманов Габдрашит Султанович (род. 1936) - советский российский татарстанский
+                            учёный, нефтяник. Родился в Мелекессе.
+                        </p>
+                        <p class="personalies__tabs-content-list-item-paragraph">                            
+                            Аблов Евгений Николаевич (1894 - 1918) - Председатель Совета рабочих и солдатских
+                            депутатов Мелекесса (март - ноябрь 1917).
+                        </p>
+                        <p class="personalies__tabs-content-list-item-paragraph">                            
+                            Аблов Николай Николаевич (1882-1942) - теоретик библиотечного дела. В 1905 жил в
+                            Мелекессе. Пытался организовать выпуск газеты "Глушь", но не получил разрешения
+                            губернатора. Распространял нелегальную литературу, за что был выслан на три года в
+                            Вологодскую губернию, затем уехал за границу. В 1917 вернулся в Россию, отошел от
+                            политической деятельности, стал специалистом-библиографом.
+                        </p>
+                        <p class="personalies__tabs-content-list-item-paragraph">                            
+                            Абрамов В.И. Ответственный секретарь Мелекесского Районного комитета ВКП(б) (ноябрь
+                            1932 - июнь 1934)
+                        </p>
+                        <p class="personalies__tabs-content-list-item-paragraph">                            
+                            Алексеев Дмитрий Иванович (1918 - 1988) - языковед, доктор филологических наук,
+                            профессор. Работал в Мелекесском пединституте (1951-1960), исследовал русские говоры и
+                            условные языки Ульяновской области.
+                        </p>
+                        <p class="personalies__tabs-content-list-item-paragraph">                            
+                            Амерханова Р.М. Секретарь мелекесского горисполкома (1944-02.06.1946).
+                        </p>
+                        <p class="personalies__tabs-content-list-item-paragraph">                            
+                            Андреев В.К. Председатель президиума городского совета Мелекесса (1926 - начало 1927),
+                            Ответственный секретарь Мелекесского Районного комитета ВКП(б) (июль - октябрь 1928)
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    @@include("blocks/footer.html");
+</body>
+</html>

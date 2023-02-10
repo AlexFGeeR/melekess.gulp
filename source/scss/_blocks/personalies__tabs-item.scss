@@ -1,0 +1,16 @@
+.personalies__tabs-btn-list-item {
+    
+    &-label {
+        font-family: $font-calibri-family;
+        background-color: #67ad45;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+        padding: 20px;
+    }
+
+    &-input {
+        display: none;
+    }
+}

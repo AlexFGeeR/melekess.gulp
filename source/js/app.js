@@ -50,4 +50,8 @@ switch(location.pathname) {
 
       break;
     }
+    case '/personalities.html': {
+      
+      break;
+    }
 }
