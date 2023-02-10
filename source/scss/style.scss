@@ -567,5 +567,14 @@
     }
   }
 
-  
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+    &-btn-list {
+      max-width: 40%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  }  
 }
