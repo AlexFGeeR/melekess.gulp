@@ -436,6 +436,10 @@
     gap: 40px;
   }
 
+  &__list-item-meta {
+    max-width: 225px;
+  }
+
   &__list-item:nth-child(1) {
     .additional-info__list-item-meta {
       background-color: #67ad45;
