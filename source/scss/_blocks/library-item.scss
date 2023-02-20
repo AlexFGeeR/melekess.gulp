@@ -1,0 +1,42 @@
+.library__wrapper-list-item {
+    font-family: $font-calibri-family;
+    display: flex;
+    background-color: #fefefe;
+
+    &-wrapper {
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 250px;
+
+        &-img {
+            align-self: flex-end;
+        }
+
+        &-meta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+
+            &-title {
+                font-size: 24px;
+            }
+
+            &-paragraph {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 22px;
+                color: #5b5f68;
+            }
+        }
+
+        &-download {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #6e727a;
+        }
+    }
+}

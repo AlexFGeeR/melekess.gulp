@@ -809,7 +809,8 @@
     &-list {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      flex-wrap: wrap;
+      gap: 40px;
     }
 
     &-btn {
@@ -817,7 +818,7 @@
       padding: 15px 25px;
       background-color: #67ad45;
       color: #fff;
-      margin: 0 auto;
+      margin: 40px auto 0 auto;
     }
   }
 }
