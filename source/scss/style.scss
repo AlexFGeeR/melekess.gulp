@@ -436,8 +436,16 @@
     gap: 40px;
   }
 
+  &__list-item-wrapper {
+    min-height: 820px;
+  }
+
   &__list-item-meta {
-    max-width: 225px;
+    // max-width: 225px;
+    width: 90%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
   }
 
   &__list-item:nth-child(1) {

@@ -7,6 +7,10 @@
         margin-bottom: 15px;
     }
 
+    &-title_padding {
+        padding-bottom: 21px;
+    }
+
     &-text {
         margin-top: 160px;
         padding: 0 30px;
@@ -16,7 +20,10 @@
     }
 
     &-link {
-        margin: 25px 15px 0 auto;
+        // margin: 25px 15px 0 auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
         padding: 15px 35px;
         background-color: #67ad45;
         color: white;
