@@ -1,0 +1,32 @@
+.religion__list-item {
+    font-family: $font-calibri-family;
+    max-width: 400px;
+    position: relative;
+    background-color: #ebeceb;
+    max-height: 700px;
+
+    &-meta {
+        width: 100%;
+        font-weight: 700;
+        text-align: center;
+        background-color: #ebececc5;
+        position: absolute;
+        top: 252px;
+        padding: 15px 0;
+    }
+
+    &-wrapper {
+        padding: 15px 15px 25px 15px;
+
+        &-title {
+            margin-bottom: 10px;
+        }
+        
+        &-text {
+            overflow-y: auto;
+            max-height: 300px;
+            color: #474c56;
+            font-size: 18px;
+        }
+    }
+}

@@ -27,6 +27,7 @@
 @import "_blocks/news-item";
 @import "_blocks/additional-info-item";
 @import "_blocks/personalies__tabs-item";
+@import "_blocks/religion-item";
 
 
 
@@ -467,6 +468,25 @@
     .additional-info__list-item-meta {
       background-color: #f4b601;
     }
+  }
+}
+
+.religion {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    color: #474c56;
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
   }
 }
 
