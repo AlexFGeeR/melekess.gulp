@@ -20,8 +20,8 @@
         "library-active": "header__nav-list-link_active",
     })
     <main class="main">
-        <section class="library container">
-            <div class="library__header">
+        <section class="library">
+            <div class="library__header container">
                 <div class="library__header-wrapper library__header-wrapper_title">
                     <div class="header-wrapper-text">
                         <h1 class="library__title uppercase">Библиотека</h1>
@@ -32,6 +32,14 @@
                     <input type="text" class="library__header-wrapper-input">
                     <button class="library__header-wrapper-button" type="button">Поиск</button>
                 </div>
+            </div>
+            <div class="library__wrapper">
+                <ul class="library__wrapper-list">
+                    @@include("blocks/library-item.html", {
+                        
+                    })
+                </ul>
+                <button class="library__wrapper-btn uppercase">Показать больше</button>
             </div>
         </section>
     </main>

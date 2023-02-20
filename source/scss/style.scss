@@ -28,6 +28,7 @@
 @import "_blocks/additional-info-item";
 @import "_blocks/personalies__tabs-item";
 @import "_blocks/religion-item";
+@import "_blocks/library-item.scss";
 
 
 
@@ -798,6 +799,25 @@
         height: 36px;
         color: #fff;
       }
+    }
+  }
+
+  &__wrapper {
+    background-color: #ebecec;
+    padding: 25px;
+
+    &-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    &-btn {
+      display: block;
+      padding: 15px 25px;
+      background-color: #67ad45;
+      color: #fff;
+      margin: 0 auto;
     }
   }
 }

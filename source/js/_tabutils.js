@@ -1,3 +1,5 @@
+// Фукнция дла организации работы с табами.
+// Может использоваться на любой странице проекта и написана для максимального переиспользования.
 const createTabMenu = ({contentClass, btnClass, contentId}) => {
     const contents = [...document.querySelectorAll(`.${contentClass}`)];
     const btns = [...document.querySelectorAll(`.${btnClass}`)];
