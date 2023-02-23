@@ -1,5 +1,6 @@
 createSlider('excursion__main-slider', {
-    initialSlide: 0,
+    initialSlide: 3,
+    animationDuration: 500,
     extendedPagination: true,
     imgSrc: 
         ['./img/excursion/center/monument.jpg', 
