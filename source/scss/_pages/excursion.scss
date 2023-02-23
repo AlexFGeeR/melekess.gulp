@@ -67,13 +67,25 @@
                 display: flex;
                 justify-content: center;
                 gap: 20px;
+                padding: 25px 0;
 
                 &-item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                     min-width: 250px;
                     min-height: 250px;
                     border-radius: 50px;
                     border: 4px solid #67ad45;
                     background-size: cover;
+
+                    &::after {
+                        font-family: $font-calibri-family;
+                        text-align: center;
+                        color: #474c56;
+                        font-size: 24px;
+                        width: 85%;
+                    }
 
                     &-paragraph {
                         width: fit-content;
@@ -82,6 +94,7 @@
                         border-radius: 25px;
                         color: white;
                         margin: 0 auto;
+                        align-self: center;
                     }
 
                     &_active {
@@ -90,6 +103,10 @@
                         }
                     }
                 }
+            }
+
+            &-wrapper {
+                background-color: #fff;
             }
         }
     }

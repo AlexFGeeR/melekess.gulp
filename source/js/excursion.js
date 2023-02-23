@@ -8,4 +8,11 @@ createSlider('excursion__main-slider', {
         './img/excursion/center/musorovoy.jpg',
         './img/excursion/center/forever_fire.jpg'
     ],
+    paginationsTitle: 
+        ['Памятник', 
+        'Памятник космонавтики',
+        'Памятник купцу <br> Маркову',
+        'Бюст Марии Мусоровой',
+        'Вечный огонь',
+    ],
 });
