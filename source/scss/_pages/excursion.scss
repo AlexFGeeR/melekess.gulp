@@ -1,0 +1,42 @@
+.excursion {
+    &__title {
+        &::before {
+            background-image: url("../../img/icons/excursions.png");
+        }
+    }
+
+    &__intro {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-height: 600px;
+            overflow-y: auto;
+            padding: 15px 35px;
+            max-width: 50%;
+            background-color: #ebecec;
+
+            &-header {
+                font-family: $font-calibri-family;                
+                &-subtitle {
+                    font-size: 20px;
+                    color: #474c56;
+                }
+                &-title {
+                    margin-top: 15px;
+                    font-size: 26px;
+                    color: #67ad45;
+                }
+            }
+
+            &-text {
+                font-size: 18px;
+                color: #474c56;
+            }
+        }
+    }
+}

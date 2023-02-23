@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Мелекесс - Центр города</title>
+</head>
+<body>
+    @@include("blocks/header.html", {
+        "excursions-active": "",
+        "city-active": "",
+        "games-active": "",
+        "turims-active": "",
+        "gallery-active": "",
+        "news-active": "",
+        "personalies-active": "",
+        "map-active": "",
+        "library-active": "",
+    })
+    <main class="main">
+        <section class="excursion">
+            <h1 class="hidden">Экскурсии</h1>
+            <div class="section__header section__header_extended container">
+              <h2 class="excursion__title section__title uppercase">Экскурсии</h2>
+              <a href="#" class="excursion__link section__header-link">Посмотреть все места</a>
+              <p class="excursion__subtitle section__subtitle uppercase">Маршруты, аудиогиды</p>
+            </div>
+            <article class="excursion__intro container">
+                <img src="./img/excursion/center.jpg" alt="" class="excursion__intro-img" width="900" height="600">
+                <div class="excursion__intro-wrapper">
+                    <div class="excursion__intro-wrapper-header">
+                        <p class="excursion__intro-wrapper-header-subtitle">Центр</p>
+                        <h3 class="excursion__intro-wrapper-header-title">Центр города - Памятники</h3>
+                    </div>
+                    <div class="excursion__intro-wrapper-text">
+                        <p class="excursion__intro-wrapper-text-paragraph">
+                            В основу Димитровградского краеведческого музея была положена коллекция, собранная в 20-50-е годы XX века краеведом Степаном Георгиевичем Дырченковым. С 1978 года музей располагается в одном из самых красивых зданий города, построенном в начале прошлого века на средства купца Ф.Г.Маркова.
+                        </p>
+                        <p class="excursion__intro-wrapper-text-paragraph">
+                            В музее представлены: зал природы содержит чучела животных, изготовленные мастером-таксидермистом очень нравится детям; в зале археологии и палеонтологии демонстрируются - древнейший артефакт савроматская жертвенная чаша, череп шестистого носорога и бивень мамонта;
+                        </p>
+                        <p class="excursion__intro-wrapper-text-paragraph">
+                            1 января 1977 года народный музей получил статус государственного, став филиалом Ульяновского областного краеведческого музея им. И.А. Гончарова.
+                        </p>
+                        <p class="excursion__intro-wrapper-text-paragraph">
+                            В 1996 году музей становится муниципальным учреждением культуры. В 1999 году - вошел в ассоциацию муниципальных музеев Среднего Поволжья «Содружество».
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
