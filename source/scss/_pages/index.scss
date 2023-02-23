@@ -1,0 +1,58 @@
+
+
+.promo-video {
+    width: 100%;
+    height: 850px;
+    margin: 75px auto;
+    display: flex;
+    justify-content: center;
+  
+    &__frame {
+        width: 100%;
+    }
+  
+    @media (max-width: $media-tablet-landscape) {
+        height: 400px;
+    }
+  }
+  
+  .excursions {
+    padding-bottom: 80px;
+  
+    &_grey {
+        background-color: #ebecec;
+    }
+  
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+  
+        &_grey {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #ebecec;
+        }
+    }
+  
+    &__link {
+        padding: 10px 25px;
+        background-color: #67ad45;
+        font-weight: 700;
+        color: #fff;
+  
+        @media (max-width: $media-tablet) {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+  
+    &__title {
+        &::before {
+            background-image: url("../../img/icons/excursions.png");
+        }
+    }
+  }
+  

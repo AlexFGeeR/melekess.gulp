@@ -1,0 +1,17 @@
+.games {
+    &__title {
+      &::before {
+        background-image: url("../../img/icons/games.png");
+      }
+    }
+  
+    &__list {
+      display: flex;
+      justify-content: center;
+      column-gap: 129px;
+      row-gap: 40px;
+      flex-wrap: wrap;
+      margin: 40px auto 0 auto;
+      max-width: 1200px;
+    }
+  }

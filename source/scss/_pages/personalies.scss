@@ -1,0 +1,100 @@
+// Personalies page
+.personalies {
+    &__title {
+      background-color: #fff;
+      padding-bottom: 15px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      color: #474c56;
+      font-family: $font-ultraWide-family;
+      font-size: 30px;
+  
+      @media (max-width: $media-tablet) {
+        font-size: 22px;
+      }
+  
+      &::before {
+        display: block;
+        content: "";
+        background-size: 63px 73px;
+        width: 63px;
+        height: 73px;
+        background-image: url("../img/icons/personalities.png");
+      }
+    }
+  
+    &__tabs {
+      display: flex;
+      justify-content: space-between;
+      &-btn-list {
+        max-width: 24%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+  
+        @media (max-width: $media-tablet) {
+          max-width: inherit;
+        }
+      }
+  
+      @media (max-width: $media-tablet) {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+  
+      &-content-list {
+        background-color: #ebecec;
+  
+        &-item {
+          margin-left: 20%;
+          font-family: $font-calibri-family;
+          font-size: 20px;
+          display: none;
+  
+          &_active {
+            display: block;
+          }
+  
+          &-paragraph:not(:last-child) {
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+  
+  #personalies__tabs-btn-1:checked~label[for=personalies__tabs-btn-1],
+  #personalies__tabs-btn-2:checked~label[for=personalies__tabs-btn-2],
+  #personalies__tabs-btn-3:checked~label[for=personalies__tabs-btn-3],
+  #personalies__tabs-btn-4:checked~label[for=personalies__tabs-btn-4],
+  #personalies__tabs-btn-5:checked~label[for=personalies__tabs-btn-5],
+  #personalies__tabs-btn-6:checked~label[for=personalies__tabs-btn-6],
+  #personalies__tabs-btn-7:checked~label[for=personalies__tabs-btn-7],
+  #personalies__tabs-btn-8:checked~label[for=personalies__tabs-btn-8],
+  #personalies__tabs-btn-9:checked~label[for=personalies__tabs-btn-9],
+  #personalies__tabs-btn-10:checked~label[for=personalies__tabs-btn-10],
+  #personalies__tabs-btn-11:checked~label[for=personalies__tabs-btn-11],
+  #personalies__tabs-btn-12:checked~label[for=personalies__tabs-btn-12],
+  #personalies__tabs-btn-13:checked~label[for=personalies__tabs-btn-13],
+  #personalies__tabs-btn-14:checked~label[for=personalies__tabs-btn-14],
+  #personalies__tabs-btn-15:checked~label[for=personalies__tabs-btn-15],
+  #personalies__tabs-btn-16:checked~label[for=personalies__tabs-btn-16],
+  #personalies__tabs-btn-17:checked~label[for=personalies__tabs-btn-17],
+  #personalies__tabs-btn-18:checked~label[for=personalies__tabs-btn-18],
+  #personalies__tabs-btn-19:checked~label[for=personalies__tabs-btn-19],
+  #personalies__tabs-btn-20:checked~label[for=personalies__tabs-btn-20],
+  #personalies__tabs-btn-21:checked~label[for=personalies__tabs-btn-21],
+  #personalies__tabs-btn-22:checked~label[for=personalies__tabs-btn-22],
+  #personalies__tabs-btn-23:checked~label[for=personalies__tabs-btn-23],
+  #personalies__tabs-btn-24:checked~label[for=personalies__tabs-btn-24],
+  #personalies__tabs-btn-25:checked~label[for=personalies__tabs-btn-25],
+  #personalies__tabs-btn-26:checked~label[for=personalies__tabs-btn-26],
+  #personalies__tabs-btn-27:checked~label[for=personalies__tabs-btn-27],
+  #personalies__tabs-btn-28:checked~label[for=personalies__tabs-btn-28] {
+    background-color: #7bc611;
+  }
+  
+  

@@ -1,0 +1,42 @@
+.news {
+    background-color: #e1e0e0;
+    font-family: $font-calibri-family;
+    padding-bottom: 25px;
+  
+    &__title {
+      background-color: #fff;
+      padding-bottom: 15px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      color: #474c56;
+      font-family: $font-ultraWide-family;
+      font-size: 30px;
+      &::before {
+        display: block;
+        content: "";
+        background-size: 63px 73px;
+        width: 63px;
+        height: 73px;
+        background-image: url("../img/icons/news.png");
+      }
+    }
+  
+    &__link {
+      display: block;
+      width: fit-content;
+      background-color: #67ad45;
+      padding: 5px 15px;
+      font-size: 18px;
+      margin: 0 auto;
+      color: #fff;
+    }
+  
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  }

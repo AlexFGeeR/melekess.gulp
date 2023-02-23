@@ -1,0 +1,29 @@
+
+// Map page
+.map {
+    &__title {
+      background-color: #fff;
+      padding-bottom: 15px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      color: #474c56;
+      font-family: $font-ultraWide-family;
+      font-size: 30px;
+  
+      @media (max-width: $media-tablet) {
+        font-size: 22px;
+      }
+  
+      &::before {
+        display: block;
+        content: "";
+        background-size: 63px 73px;
+        width: 63px;
+        height: 73px;
+        background-image: url("../img/icons/map.png");
+      }
+    }
+  }
+  

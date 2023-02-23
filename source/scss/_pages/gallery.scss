@@ -1,0 +1,48 @@
+.gallery {
+    &__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 40px auto 0 auto;
+    }
+    
+    &__title::before {
+      background-image: url("../../img/icons/gallery.png");
+    }
+  }
+  
+  .online-turism {
+  
+    &__title::before {
+        background-image: url("../../img/icons/online-turism.png");
+    }
+  
+    &__link {
+        display: block;
+        padding: 10px 35px;
+        background-color: #3873b9;
+        color: #fff;
+        font-weight: 700;
+  
+        @media (max-width: $media-tablet) {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+  
+    &__list {
+      margin: 40px auto 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      gap: 125px;
+    }
+  
+    &__img {
+        width: 100%;
+        height: 50%;
+    }
+  }
+  
