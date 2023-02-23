@@ -1,0 +1,58 @@
+.recommendations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    &__title {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        font-family: $font-ultraWide-family;
+        color: #474c56;
+
+        &::before {
+            display: block;
+            content: "";
+            width: 64px;
+            height: 73px;
+            background-size: cover;
+            background-image: url('../../img/icons/recommends.png');
+        }
+    }
+
+    &__list {
+        margin: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+
+        &-item {
+            &:nth-child(8n + 1) {
+                background-image: url("../../img/recommendations/sight.jpg");  
+            }
+            &:nth-child(8n + 2) {
+                background-image: url("../../img/excursion/center/monument.jpg"); 
+            }
+            &:nth-child(8n + 3) {
+                background-image: url("../../img/content/food.jpg"); 
+            }
+            &:nth-child(8n + 4) {
+                background-image: url("../../img/recommendations/culture.jpg"); 
+            }
+            &:nth-child(8n + 5) {
+                background-image: url("../../img/recommendations/active-chill.jpg"); 
+            }
+            &:nth-child(8n + 6) {
+                background-image: url("../../img/recommendations/hotel.jpg"); 
+            }
+            &:nth-child(8n + 7) {
+                background-image: url("../../img/recommendations/medical.jpg"); 
+            }
+            &:nth-child(8n + 8) {
+                background-image: url("../../img/recommendations/neighborhood.jpg"); 
+            }
+        }
+    }
+}

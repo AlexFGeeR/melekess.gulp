@@ -1,0 +1,42 @@
+.recommendations__list-item {
+    font-family: $font-calibri-family;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    // background-image: url("../../img/recommendations/sight.jpg");
+    padding: 60px;
+
+    &-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ebececcf;
+        height: 100%;
+        padding: 20px 0;
+        border-radius: 35px;
+
+        &-img {
+            width: 63px;
+            height: 72px;
+        }
+
+        &-paragraph {
+            font-size: 20px;
+            font-weight: 700;
+            color: #474c56;
+            text-align: center;
+        }
+
+        &-link {
+            padding: 10px 15px;
+            font-weight: 700;
+            color: #fff;
+            background-color: #67ad45;
+            // position: absolute;
+            // bottom: 10px;
+            font-size: 20px;
+        }
+    }
+}

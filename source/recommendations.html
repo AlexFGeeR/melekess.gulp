@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мелекесс - Рекомендации</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    @@include("blocks/header.html", {
+        "excursions-active": "",
+        "city-active": "",
+        "games-active": "",
+        "turims-active": "",
+        "gallery-active": "",
+        "news-active": "",
+        "personalies-active": "",
+        "map-active": "",
+        "library-active": "",
+        "recommendations-active": "header__nav-list-link_active",
+    })
+    <main class="main container">
+        <section class="recommendations">
+            <h1 class="recommendations__title uppercase">Рекомендуем</h1>
+            <ul class="recommendations__list">
+                @@include("blocks/recommendations-item.html", {
+                    "imgSrc": "./img/icons/sight.png",
+                    "imgAlt": "",
+                    "text": "Достопримечательности",
+                })
+                @@include("blocks/recommendations-item.html", {
+                    "imgSrc": "./img/icons/monuments.png",
+                    "imgAlt": "",
+                    "text": "Памятники",
+                })
+                @@include("blocks/recommendations-item.html", {
+                    "imgSrc": "./img/content/cafe-min.png",
+                    "imgAlt": "",
+                    "text": "Рестораны<br>Кафе<br>Клубы<br>",
+                })
+                @@include("blocks/recommendations-item.html", {
+                    "imgSrc": "./img/icons/culture.png",
+                    "imgAlt": "",
+                    "text": "Культура и<br>искусство",
+                })
+                @@include("blocks/recommendations-item.html", {
+                    "imgSrc": "./img/icons/active-chill.png",
+                    "imgAlt": "",
+                    "text": "Активный<br>отдых",
+                })
+                @@include("blocks/recommendations-item.html", {
+                    "imgSrc": "./img/content/hotel-min.png",
+                    "imgAlt": "",
+                    "text": "Отели<br>гостиницы<br>дома отдыха",
+                })
+                @@include("blocks/recommendations-item.html", {
+                    "imgSrc": "./img/icons/medical.png",
+                    "imgAlt": "",
+                    "text": "Медицина",
+                })
+                @@include("blocks/recommendations-item.html", {
+                    "imgSrc": "./img/icons/neighborhood.png",
+                    "imgAlt": "",
+                    "text": "Окрестности",
+                })
+            </ul>
+        </section>
+    </main>
+    @@include("blocks/footer.html")
+</body>
+</html>
