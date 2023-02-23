@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мелекесс - Рекомендуем</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    @@include("blocks/header.html", {
+        "excursions-active": "",
+        "city-active": "",
+        "games-active": "",
+        "turims-active": "",
+        "gallery-active": "",
+        "news-active": "",
+        "personalies-active": "",
+        "map-active": "",
+        "library-active": "",
+        "recommendations-active": "",
+    })
+    <main class="main container">
+        <section class="recommend">
+            <h1 class="recommend__title uppercase">Рекомендуем</h1>
+            <p class="recommend__subtitle uppercase">Памятники</p>
+            <div class="recommend__slider">
+                <div class="recommend__slider-wrapper">
+                    <div class="recommend__slider-inner-wrapper">
+                        <div class="recommend__slider-slide">
+                            <div class="recommend__slider-slide-wrapper">
+                                <img src="./img/recommend/markov.jpg" class="recommend__slider-slide-wrapper-img" alt="#" width="600" height="400">
+                                <p class="recommend__slider-slide-wrapper-meta">Памятник купцу Маркову</p>
+                            </div>
+                            <div class="recommend__slider-slide-wrapper">
+                                <h3 class="recommend__slider-slide-wrapper-title">Памятник купцу Маркову</h3>
+                                <p class="recommend__slider-slide-wrapper-text">
+                                    Памятник находится в сквере старой части города Димитровград (прежде назывался Мелекесс).<br>
+                                    Посвящене Первому голове посада Мелекесс-купцу и меценату - Константину Григорьевичу Маркову. 40 лет он управлял городом, занимался благотворительностью, построил первую женскую и мужскую гимназию. И в 2000х горожане вспомнили его заслуги и поставили памятник. В каждом городе есть монумент отцу-основателю.<br>
+                                    Есть и в Димитровграде.
+                                </p>
+                                <div class="recommend__slider-slide-wrapper-comments">
+                                    <h4 class="recommend__slider-slide-wrapper-comments-title">Комментарии</h4>
+                                    <!-- todo -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend__slider-slide">2</div>
+                        <div class="recommend__slider-slide">3</div>
+                        <div class="recommend__slider-slide">4</div>
+                        <div class="recommend__slider-slide">5</div>
+                        <div class="recommend__slider-slide">4</div>
+                        <div class="recommend__slider-slide">5</div>
+                    </div>
+                </div>
+                <div class="recommend__slider-controls">
+                    <button class="recommend__slider-controls-btn recommend__slider-back_js">&#60;</button>
+                    <button class="recommend__slider-controls-btn recommend__slider-next_js">&#62;</button>
+                </div>
+                <div class="recommend__slider-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/_sliderutils.js"></script>
+    <script src="./js/recommend.js"></script>
+</body>
+</html>

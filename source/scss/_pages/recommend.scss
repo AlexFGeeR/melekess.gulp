@@ -1,0 +1,84 @@
+.recommend {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-family: $font-ultraWide-family;
+        color: #474c56;
+
+        &::before {
+            position: absolute;
+            left: -80px;
+            display: block;
+            content: "";
+            background-size: cover;
+            width: 64px;
+            height: 73px;
+            background-image: url('../../img/icons/recommends.png');
+        }
+    }
+
+    &__subtitle {
+        color: #474c56;
+        font-family: $font-calibri-family;
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    &__slider {
+        width: 100%;
+
+        &-wrapper {
+            overflow: hidden;
+        }
+
+        &-inner-wrapper {
+            display: flex;
+            height: 100%;
+            transition: transform;
+        }
+
+        &-slide {
+            display: flex;
+            justify-content: space-between;
+            flex-shrink: 0;
+            height: 700px;
+        }
+        
+        &-pagination {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+
+            &-item {
+                cursor: pointer;
+                position: relative;
+                background-size: cover;
+                width: 450px;
+                height: 300px;
+
+                &_active {
+                    border: 6px solid #67ad45;
+                }
+
+                &-text {
+                    width: 100%;
+                    background-color: #ebececd2;
+                    position: absolute;
+                    bottom: 0;
+                    text-align: center;
+                    font-size: 18px;
+                    padding: 2px 0;
+                }
+            }
+        }
+    }
+}

@@ -2,6 +2,7 @@ createSlider('excursion__main-slider', {
     initialSlide: 3,
     animationDuration: 500,
     extendedPagination: true,
+    extType: 0,
     imgSrc: 
         ['./img/excursion/center/monument.jpg', 
         './img/excursion/center/cosmo_monument.jpg',

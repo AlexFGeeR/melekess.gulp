@@ -1,7 +1,7 @@
 // Требуется чтобы пагинация была динамической
 // Значит картинки должны грузиться здесь и сама пагинация должна создаваться здесь
 
-const createSlider = (selector, options = {initialSlide: 0, animationDuration: 500, imgSrc: [], paginationsTitle: [], pagination: false, extendedPagination: false}) => {
+const createSlider = (selector, options = {initialSlide: 0, animationDuration: 500, imgSrc: [], paginationsTitle: [], pagination: false, extendedPagination: false, extType: 0}) => {
     const slider = document.querySelector(`.${selector}`); // excursion__main-slider
     const wrapper = slider.querySelector(`.${selector}-wrapper`); // excursion__main-slider-wrapper
     const innerWrapper = wrapper.querySelector(`.${selector}-inner-wrapper`); // excursion__main-slider-inner-wrapper
@@ -91,27 +91,41 @@ const createSlider = (selector, options = {initialSlide: 0, animationDuration: 5
     }
 
     function createExtPag(index) {
-        let pagination = document.createElement('div');
-        let button = document.createElement('button');
-        pagination.classList.add(`${selector}-pagination-wrapper`);
-        button.classList.add(`${selector}-pagination-item`);
-        button.style.backgroundImage = `url(${options.imgSrc[index]})`;
-        button.innerHTML = `<p class="${selector}-pagination-item-paragraph">${index+1}</p>`;
+        const pagination = document.createElement('div');
+        switch (options.extType) {
+            case 0: {
+                let button = document.createElement('button');
+                pagination.classList.add(`${selector}-pagination-wrapper`);
+                button.classList.add(`${selector}-pagination-item`);
+                button.style.backgroundImage = `url(${options.imgSrc[index]})`;
+                button.innerHTML = `<p class="${selector}-pagination-item-paragraph">${index+1}</p>`;
 
-        pagination.insertAdjacentElement('beforeend', button);
+                pagination.insertAdjacentElement('beforeend', button);
 
-        let text = document.createElement('span');
-        text.innerHTML = `${options.paginationsTitle[index]}`;
-        pagination.insertAdjacentElement('beforeend', text);
+                let text = document.createElement('span');
+                text.innerHTML = `${options.paginationsTitle[index]}`;
+                pagination.insertAdjacentElement('beforeend', text);
 
-        if (index === activeSlideIndex) {
-            pagination.classList.add(`${selector}-pagination-item_active`);
-        }
+                if (index === activeSlideIndex) {
+                    pagination.classList.add(`${selector}-pagination-item_active`);
+                }
 
-        pagination.addEventListener('click', () => {
-            setActiveSlide(index, false);
-        })
+                pagination.addEventListener('click', () => {
+                    setActiveSlide(index, false);
+                })
+                break;
+            }
+            case 1: {
+                pagination.classList.add(`${selector}-pagination-item`);
+                pagination.style.backgroundImage = `url(${options.imgSrc[index]})`;
+                pagination.innerHTML = `<p class="${selector}-pagination-item-text">${options.paginationsTitle[index]}</p>`;
 
+                pagination.addEventListener('click', () => {
+                    setActiveSlide(index, false);
+                })
+                break;
+            }
+        }    
         return pagination;
     }
 }
