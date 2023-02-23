@@ -90,21 +90,47 @@ const createSlider = (selector, options = {initialSlide: 0, animationDuration: 5
         })
     }
 
+    // function createExtPag(index) {
+    //     let pagination = document.createElement('button');
+    //     pagination.innerHTML = `<p class="${selector}-pagination-item-paragraph">${index + 1}</p>`
+    //     pagination.classList.add(`${selector}-pagination-item`);
+    //     pagination.style.backgroundImage = `url(${options.imgSrc[index]})`;
+
+    //     if (index === activeSlideIndex) {
+    //         pagination.classList.add(`${selector}-pagination-item_active`);
+    //     }
+
+    //     pagination.addEventListener('click', () => {
+    //         setActiveSlide(index, false);
+    //     })
+
+    //     return pagination;
+    // }
+
     function createExtPag(index) {
-        let pagination = document.createElement('button');
-        pagination.innerHTML = `<p class="${selector}-pagination-item-paragraph">${index + 1}</p>`
-        pagination.classList.add(`${selector}-pagination-item`);
-        pagination.style.backgroundImage = `url(${options.imgSrc[index]})`;
+        let pagination = document.createElement('div');
+        let button = document.createElement('button');
+        pagination.classList.add(`${selector}-pagination-wrapper`);
+        button.classList.add(`${selector}-pagination-item`);
+        button.style.backgroundImage = `url(${options.imgSrc[index]})`;
+        button.innerHTML = `<p class="${selector}-pagination-item-paragraph">${index+1}</p>`;
+
+        pagination.insertAdjacentElement('beforeend', button);
+
+        let text = document.createElement('span');
+        text.innerHTML = `${options.paginationsTitle[index]}`;
+        pagination.insertAdjacentElement('beforeend', text);
+        // pagination.classList.add(``);
+        // pagination.button.style.backgroundImage = `url(${options.imgSrc[index]})`;
 
         if (index === activeSlideIndex) {
             pagination.classList.add(`${selector}-pagination-item_active`);
         }
 
         pagination.addEventListener('click', () => {
-            console.log(`Клик на кнопку ${index}`);
+            setActiveSlide(index, false);
         })
 
         return pagination;
     }
-
 }
