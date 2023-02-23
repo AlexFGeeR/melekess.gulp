@@ -211,4 +211,20 @@
             }
         }
     }
+
+    &__more {
+        background-color: #ebecec;
+        text-align: center;
+
+        &-title {
+            color: #474c56;
+            margin-bottom: 30px;
+        }
+
+        &-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
 }

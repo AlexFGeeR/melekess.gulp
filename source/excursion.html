@@ -100,7 +100,28 @@
                 </div>
             </article>
         </section>
+        <section class="excursion__more container">
+            <h2 class="excursion__more-title uppercase">Смотрите также</h2>
+            <ul class="excursion__more-list">
+                @@include("blocks/excursions-item.html", {
+                    "img": "./img/excursion/more/victory_park.jpg",
+                    "title": "Парк Победы",
+                    "desc": "В основу Димитровградского краеведческого музея была положена коллекция, собранная в 20-50-е годы XX века краеведом Степаном Георгиевичем Дырченковым..."
+                })
+                @@include("blocks/excursions-item.html", {
+                    "img": "./img/excursion/more/clouds.jpg",
+                    "title": "Выставка под открытым небом",
+                    "desc": "Выставка авторского войлока С. В. Шемякиной в рамках проекта Народный мастер Белгородской области."
+                })
+                @@include("blocks/excursions-item.html", {
+                    "img": "./img/excursion/more/victory_park.jpg",
+                    "title": "Центр, Малый круг",
+                    "desc": "Прогулка по центру города. История на каждом шагу..."
+                })
+            </ul>  
+        </section>
     </main>
+    @@include("blocks/footer.html")
     <script src="./js/_sliderutils.js"></script>
     <script src="./js/excursion.js"></script>
 </body>
