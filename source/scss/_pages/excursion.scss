@@ -39,4 +39,58 @@
             }
         }
     }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ebecec;
+
+        &-header {
+            text-align: center;
+            font-family: $font-calibri-family;
+
+            &-title {
+                font-size: 26px;
+                color: #474c56;
+            }
+
+            &-subtitle {
+                font-size: 20px;
+            }
+        }
+
+        &-slider {
+            margin-top: 20px;
+            &-pagination {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+
+                &-item {
+                    min-width: 250px;
+                    min-height: 250px;
+                    border-radius: 50px;
+                    border: 4px solid #67ad45;
+                    background-size: cover;
+
+                    &-paragraph {
+                        width: fit-content;
+                        padding: 10px 15px;
+                        background-color: #67ad45;
+                        border-radius: 25px;
+                        color: white;
+                        margin: 0 auto;
+                    }
+
+                    &_active {
+                        p {
+                            background-color: #f4b601;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

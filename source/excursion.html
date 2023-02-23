@@ -28,7 +28,7 @@
               <p class="excursion__subtitle section__subtitle uppercase">Маршруты, аудиогиды</p>
             </div>
             <article class="excursion__intro container">
-                <img src="./img/excursion/center.jpg" alt="" class="excursion__intro-img" width="900" height="600">
+                <img src="./img/excursion/center/center.jpg" alt="" class="excursion__intro-img" width="900" height="600">
                 <div class="excursion__intro-wrapper">
                     <div class="excursion__intro-wrapper-header">
                         <p class="excursion__intro-wrapper-header-subtitle">Центр</p>
@@ -50,7 +50,40 @@
                     </div>
                 </div>
             </article>
+            <article class="excursion__main container">
+                <div class="excursion__main-header">
+                    <h3 class="excursion__main-header-title uppercase">Объекты</h3>
+                    <p class="excursion__main-header-subtitle">Памятники с озвученной историей</p>
+                </div>
+                <div class="excursion__main-slider">
+                    <div class="excursion__main-slider-pagination"></div>
+                    <div class="excursion__main-slider-wrapper">
+                        <div class="excursion__main-slider-inner-wrapper">
+                            <div class="excursion__main-slider-slide">1</div>
+                            <div class="excursion__main-slider-slide">2</div>
+                            <div class="excursion__main-slider-slide">3</div>
+                            <div class="excursion__main-slider-slide">4</div>
+                            <div class="excursion__main-slider-slide">5</div>
+                        </div>
+                    </div>
+                    <div class="excursion__main-slider-controls">
+                        <button class="excursion__main-slider-start">Начать экскурсию</button>
+                        <div class="excursion__main-slider-controls-wrapper">
+                            <div class="excursion__main-slider-controls-wrapper-button">
+                                Предыдущий объект
+                                <button class="excursion__main-slider-controls-wrapper-btn excursion__main-slider-back_js">&#60;</button>
+                            </div>
+                            <div class="excursion__main-slider-controls-wrapper-button">
+                                Следующий объект
+                                <button class="excursion__main-slider-controls-wrapper-btn excursion__main-slider-next_js">&#62;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
+    <script src="./js/_sliderutils.js"></script>
+    <script src="./js/excursion.js"></script>
 </body>
 </html>
