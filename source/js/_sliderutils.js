@@ -31,7 +31,7 @@ const createSlider = (selector, options = {initialSlide: 0, animationDuration: 5
     })
 
     initWidth();
-    setActiveSlide(activeSlideIndex);
+    setActiveSlide(activeSlideIndex, false);
 
     buttonBack.addEventListener('click', () => {
         setActiveSlide(activeSlideIndex - 1);
@@ -90,23 +90,6 @@ const createSlider = (selector, options = {initialSlide: 0, animationDuration: 5
         })
     }
 
-    // function createExtPag(index) {
-    //     let pagination = document.createElement('button');
-    //     pagination.innerHTML = `<p class="${selector}-pagination-item-paragraph">${index + 1}</p>`
-    //     pagination.classList.add(`${selector}-pagination-item`);
-    //     pagination.style.backgroundImage = `url(${options.imgSrc[index]})`;
-
-    //     if (index === activeSlideIndex) {
-    //         pagination.classList.add(`${selector}-pagination-item_active`);
-    //     }
-
-    //     pagination.addEventListener('click', () => {
-    //         setActiveSlide(index, false);
-    //     })
-
-    //     return pagination;
-    // }
-
     function createExtPag(index) {
         let pagination = document.createElement('div');
         let button = document.createElement('button');
@@ -120,8 +103,6 @@ const createSlider = (selector, options = {initialSlide: 0, animationDuration: 5
         let text = document.createElement('span');
         text.innerHTML = `${options.paginationsTitle[index]}`;
         pagination.insertAdjacentElement('beforeend', text);
-        // pagination.classList.add(``);
-        // pagination.button.style.backgroundImage = `url(${options.imgSrc[index]})`;
 
         if (index === activeSlideIndex) {
             pagination.classList.add(`${selector}-pagination-item_active`);
