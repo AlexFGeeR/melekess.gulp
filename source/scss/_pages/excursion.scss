@@ -77,26 +77,26 @@
 
             &-slide {
                 display: flex;
+                justify-content: space-between;
                 flex-shrink: 0;
-                height: 465px;
-                align-items: center;
-                justify-content: center;
-                font-size: 24px;
-                color: #fff;
-                &:nth-child(4n + 1) {
-                    background-color: #e08dac;
-                }
-                &:nth-child(4n + 2) {
-                    background-color: #45cb85;
-                }
-                &:nth-child(4n + 3) {
-                    background-color: #f79824;
-                }
-                &:nth-child(4n + 4) {
-                    background-color: crimson;
-                }
-                &:nth-child(5n + 5) {
-                    background-color: green;
+                height: 700px;
+
+                &-wrapper {
+                    padding: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 48%;
+                    font-family: $font-calibri-family;
+                    img {
+                        width: 80%;
+                        height: auto;
+                    }
+
+                    &-title {
+
+                        margin-bottom: 20px;
+                    }
                 }
             }
 
