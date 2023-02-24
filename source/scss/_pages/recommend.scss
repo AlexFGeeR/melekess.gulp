@@ -127,6 +127,38 @@
                     }
                 }
 
+                &-msg {
+                    margin-top: 20px;
+                    text-align: start;
+
+                    &-title {
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        font-size: 22px;
+                        padding: 5px;
+                        margin-bottom: 2px;
+                    }
+
+                    &-wrapper {
+                        display: flex;
+                        align-items: center;
+                        textarea {
+                            resize: none;
+                            width: 90%;
+                            height: 70px;
+                            border: none;
+                            border-radius: 5px;
+                        }
+
+                        button {
+                            width: 10%;
+                            background-color: #67ad45;
+                            border-radius: 0 8px 8px 0;
+                        }
+                    }
+                }
+
                 &-meta {
                     padding: 10px 0;
                     width: 100%;
