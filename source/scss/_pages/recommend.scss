@@ -27,7 +27,7 @@
     &__subtitle {
         color: #474c56;
         font-family: $font-calibri-family;
-        margin-top: 20px;
+        margin: 20px 0;
         font-size: 30px;
         font-weight: 700;
     }
@@ -45,11 +45,108 @@
             transition: transform;
         }
 
+        &-controls {
+            width: fit-content;
+            margin: 30px auto;
+
+            &-btn {
+                padding: 5px 15px;
+                font-size: 40px;
+                color: #fff;
+                border-radius: 35px;
+                background-color: #67ad45;
+
+                &:nth-child(2n + 1) {
+                    margin-right: 40px;
+                }
+
+                &:disabled {
+                    color: #ffffff4e;
+                }
+            }
+        }
+
         &-slide {
+            font-family: $font-calibri-family;
             display: flex;
             justify-content: space-between;
             flex-shrink: 0;
             height: 700px;
+
+            &-wrapper {
+                background-color: #ebecec;
+                position: relative;
+                text-align: center;
+
+                &-title {
+                    font-size: 28px;
+                    color: #474c56;
+                    margin-bottom: 15px;
+                }
+
+                &-text {
+                    font-size: 20px;
+                    color: #474c56;
+                }
+
+                &-img {
+                    width: auto;
+                    display: block;
+                    margin: 0 auto;
+                    height: 100%;
+                }
+
+                &-comments {
+                    margin-top: 20px;
+                    text-align: start;
+
+                    &-title {
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        font-size: 22px;
+                        padding: 5px;
+                        border-bottom: 4px solid #67ad45;
+                        margin-bottom: 20px;
+                    }
+
+                    &-comment {
+                        &-wrapper {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                        }
+
+                        &-link {
+                            display: block;
+                            width: fit-content;
+                            margin-left: auto;
+                            color: #67ad45;
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                &-meta {
+                    padding: 10px 0;
+                    width: 100%;
+                    background-color: #ffffffd3;
+                    text-align: center;
+                    font-size: 18px;
+                    position: absolute;
+                    bottom: 0;
+                }
+
+                &:nth-child(2n + 1) {
+                    width: 65%;
+                }
+
+                &:nth-child(2n+2) {
+                    width: 30%;
+                    padding: 20px 15px;
+                    overflow-y: auto;
+                }
+            }
         }
         
         &-pagination {
