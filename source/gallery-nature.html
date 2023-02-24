@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мелекесс - природа</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    @@include("blocks/header.html", {
+        "excursions-active": "",
+        "city-active": "",
+        "games-active": "",
+        "turims-active": "",
+        "gallery-active": "",
+        "news-active": "",
+        "personalies-active": "",
+        "map-active": "",
+        "library-active": "",
+        "recommendations-active": "",
+    })
+    <main class="main">
+        <section class="gallery-nature container">
+            <h1 class="gallery-nature__title uppercase">Галерея</h1>
+            <p class="gallery-nature__subtitle uppercase">Природа</p>
+            <p class="gallery-nature__description">В этом разделе вы увидите самые красивые места нашего района, чарующую природу Димитровграда, рассветы и закаты, леса и водоёмы...</p>
+            <div class="gallery-nature__slider">
+                <div class="gallery-nature__slider-wrapper">
+                    <div class="gallery-nature__slider-inner-wrapper">
+                        <div class="gallery-nature__slider-slide">
+                            <div class="gallery-nature__slider-slide-wrapper">
+                                <img src="./img/gallery-nature/slide1.jpg" class="recommend__slider-slide-wrapper-img" alt="#" width="600" height="400">
+                                <p class="gallery-nature__slider-slide-wrapper-meta">Природа Димитровграда</p>
+                            </div>
+                            <div class="gallery-nature__slider-slide-wrapper">
+                                <div class="gallery-nature__slider-slide-wrapper-comments">
+                                    <h4 class="gallery-nature__slider-slide-wrapper-comments-title">Комментарии</h4>
+                                </div>
+                                <div class="gallery-nature__slider-slide-wrapper-msg">
+                                    <h4 class="gallery-nature__slider-slide-wrapper-msg-title">Оставить комментарий</h4>
+                                    <div class="gallery-nature__slider-slide-wrapper-msg-wrapper">
+                                        <textarea></textarea>
+                                        <button type="button">
+                                            <img src="./img/icons/send_message.svg" alt="#">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-nature__slider-slide">2</div>
+                        <div class="gallery-nature__slider-slide">3</div>
+                        <div class="gallery-nature__slider-slide">4</div>
+                        <div class="gallery-nature__slider-slide">5</div>
+                        <div class="gallery-nature__slider-slide">6</div>
+                        <div class="gallery-nature__slider-slide">7</div>
+                        <div class="gallery-nature__slider-slide">8</div>
+                        <div class="gallery-nature__slider-slide">9</div>
+                        <div class="gallery-nature__slider-slide">10</div>
+                    </div>
+                </div>
+                <div class="gallery-nature__slider-controls">
+                    <button class="gallery-nature__slider-controls-btn gallery-nature__slider-back_js">&#60;</button>
+                    <button class="gallery-nature__slider-controls-btn gallery-nature__slider-next_js">&#62;</button>
+                </div>
+                <div class="gallery-nature__slider-pagination"></div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/_sliderutils.js"></script>
+    <script src="./js/gallery-nature.js"></script>
+</body>
+</html>
