@@ -1,0 +1,27 @@
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-family: $font-ultraWide-family;
+        color: #474c56;
+
+        &::before {
+            position: absolute;
+            left: -80px;
+            display: block;
+            content: "";
+            background-size: cover;
+            width: 64px;
+            height: 73px;
+            background-image: url('../../img/icons/videos.png');
+        }
+    }
+
+    
+}
