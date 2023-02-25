@@ -1,3 +1,10 @@
+const audio = document.querySelector('.excursion__main-slider-slide-wrapper-audio_js');
+const btn = document.querySelector('.excursion__main-slider-start_js');
+
+btn.addEventListener('click', () => {
+    audio.play();
+})
+
 createSlider('excursion__main-slider', {
     initialSlide: 3,
     animationDuration: 500,
