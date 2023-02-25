@@ -1,9 +1,8 @@
 .recommendations__list-item {
     font-family: $font-calibri-family;
-    width: 400px;
+    width: 350px;
     height: 400px;
     background-size: cover;
-    // background-image: url("../../img/recommendations/sight.jpg");
     padding: 60px;
 
     &-wrapper {
@@ -23,7 +22,7 @@
         }
 
         &-paragraph {
-            font-size: 20px;
+            font-size: 17px;
             font-weight: 700;
             color: #474c56;
             text-align: center;

@@ -19,6 +19,10 @@
             background-size: cover;
             background-image: url('../../img/icons/recommends.png');
         }
+
+        @media (max-width: $media-tablet) {
+            flex-direction: column;
+        }
     }
 
     &__list {
