@@ -19,6 +19,40 @@
         <iframe class="promo-video__frame" src="https://www.youtube.com/embed/_-PhzG9SSZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </section>
 
+      <section class="locations container">
+        <h2 class="hidden">Точки интереса туристов</h2>
+        <ul class="locations__list">
+          @@include("blocks/locations-item.html", {
+            "class": "locations__list-item",
+            "classWrapper": "locations__list-item-wrapper",
+            "classImg": "locations__list-item-wrapper-img",
+            "classTitle": "locations__list-item-wrapper-title",
+            "title": "Где поесть?",
+            "modificator": "locations__list-item-wrapper_green",
+            "classLi": "locations__list-item-wrapper-paragraph",
+            "classLink": "locations__list-item-wrapper-link",
+            "imgSrc": "./img/content/cafe-min.png",
+            "imgAlt": "",
+            "text": "РЕСТОРАНЫ<br>КАФЕ<br>КЛУБЫ",
+            "link": "#",
+          })
+          @@include("blocks/locations-item.html", {
+            "class": "locations__list-item",
+            "classWrapper": "locations__list-item-wrapper",
+            "classImg": "locations__list-item-wrapper-img",
+            "classTitle": "locations__list-item-wrapper-title",
+            "title": "Где поесть?",
+            "modificator": "locations__list-item-wrapper_blue",
+            "classLi": "locations__list-item-wrapper-paragraph",
+            "classLink": "locations__list-item-wrapper-link",
+            "imgSrc": "./img/content/hotel-min.png",
+            "imgAlt": "",
+            "text": "Отели<br>Гостиница<br>Дома отдыха",
+            "link": "#",
+          })
+        </ul>
+      </section>
+
       <!-- <section class="locations container">
         <h2 class="hidden">Точки интереса туристов</h2>
         <ul class="locations__list">
@@ -42,6 +76,13 @@
           })
         </ul>
       </section> -->
+
+      <section class="locations container">
+        <h2 class="hidden">Точки интереса туристов</h2>
+        <ul class="locations__list">
+          
+        </ul>
+      </section>
 
       <section class="excursions excursions_grey container">
         <h2 class="hidden">Экскурсии</h2>
