@@ -9,6 +9,18 @@
         display: flex;
         justify-content: center;
         gap: 60px;
+        flex-wrap: nowrap;
+
+        @media (max-width: 1440px) {
+            flex-wrap: wrap;
+        }
+
+        &-img {
+            height: auto;
+            @media (max-width: 1440px) {
+                width: 90%;
+            }
+        }
 
         &-wrapper {
             display: flex;
@@ -19,6 +31,10 @@
             padding: 15px 35px;
             max-width: 50%;
             background-color: #ebecec;
+
+            @media (max-width: 1440px) {
+                max-width: 90%;
+            }
 
             &-header {
                 font-family: $font-calibri-family;                
@@ -81,6 +97,10 @@
                 flex-shrink: 0;
                 height: 700px;
 
+                @media (max-width: $media-tablet-landscape) {
+                    flex-direction: column;
+                }
+
                 &-wrapper {
                     padding: 25px;
                     display: flex;
@@ -110,6 +130,20 @@
 
                     &:nth-child(2n + 1) {
                         overflow-y: auto;
+
+                        @media (max-width: $media-tablet-landscape) {
+                            width: 100%;
+                            max-height: 50%;
+                        }
+                    }
+
+                    &:nth-child(2n + 2) {
+                        overflow-y: auto;
+
+                        @media (max-width: $media-tablet-landscape) {
+                            width: 100%;
+                            max-height: 50%;
+                        }
                     }
 
                     &-title {
@@ -189,6 +223,12 @@
                 justify-content: space-between;
                 padding: 0 40px;
 
+                @media (max-width: $media-tablet-landscape) {
+                    align-items: center;
+                    row-gap: 20px;
+                    flex-direction: column;
+                }
+
                 &-wrapper {
                     display: flex;
                     gap: 50px;
@@ -197,6 +237,7 @@
                         justify-content: center;
                         align-items: center;
                         gap: 20px;
+                        text-align: center;
                         button {
                             padding: 10px 16px;
                             font-size: 24px;
@@ -225,6 +266,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
+            flex-wrap: wrap;
         }
     }
 }

@@ -4,16 +4,18 @@
     align-items: center;
 
     &__title {
-        position: relative;
         display: flex;
         align-items: center;
+        flex-direction: row;
         gap: 20px;
         font-family: $font-ultraWide-family;
         color: #474c56;
 
+        @media (max-width: $media-tablet-landscape) {
+            flex-direction: column;
+        }
+
         &::before {
-            position: absolute;
-            left: -80px;
             display: block;
             content: "";
             background-size: cover;
@@ -23,5 +25,28 @@
         }
     }
 
-    
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        flex-wrap: wrap;
+        margin-top: 80px;
+
+        &-item {
+            width: 400px;
+            &-video {
+                border-radius: 35px;
+                width: 100%;                
+                background-color: #474c56;
+            }
+
+            &-paragraph {
+                font-weight: 1000;
+                font-size: 22px;
+                font-family: $font-calibri-family;
+                text-align: center;
+            }
+        }
+    }
 }
