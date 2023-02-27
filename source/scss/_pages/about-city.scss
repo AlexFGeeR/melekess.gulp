@@ -1,6 +1,5 @@
 // About city page
 .about-city {
-    // todo make smaller text on phone
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
@@ -192,7 +191,6 @@
   
         &-title {
           font-family: $font-ultraWide-family;
-          // font-weight: 1000; // todo
           max-width: 162px;
           font-size: 26px;
           text-align: start;
