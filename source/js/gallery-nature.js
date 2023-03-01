@@ -1,3 +1,14 @@
+const swiper = new Swiper(`.gallery-nature__slider-slide-wrapper-swiper`, {
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+    pagination: {
+        el: '.gallery-nature__slider-slide-wrapper-swiper-pagination',
+        clickable: true,
+    },
+    centeredSlides: true,
+})
+
 createSlider('gallery-nature__slider', {
     initialSlide: 0,
     animationDuration: 500,
