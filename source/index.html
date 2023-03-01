@@ -11,7 +11,19 @@
     <!-- endbuild -->
   </head>
   <body>
-    @@include("blocks/header.html")
+    @@include("blocks/header.html", {
+      "excursions-active": "",
+      "city-active": "",
+      "games-active": "",
+      "turims-active": "",
+      "gallery-active": "",
+      "news-active": "",
+      "personalies-active": "",
+      "map-active": "",
+      "library-active": "",
+      "recommendations-active": "",
+      "video-active": "",
+    })
     <main class="main">
       @@include("blocks/main-slider.html")
       <section class="promo-video">
