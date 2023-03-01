@@ -84,7 +84,7 @@
             height: 700px;
 
             @media (max-width: $media-phone) {
-                height: 432px;
+                max-height: 802px;
             }
 
             @media (max-width: $media-tablet-landscape) {
@@ -93,19 +93,27 @@
             }
 
             &-wrapper {
-                background-color: #ebecec;
                 position: relative;
                 text-align: center;
 
-                &-title {
-                    font-size: 28px;
-                    color: #474c56;
-                    margin-bottom: 15px;
-                }
+                &-content {
+                    padding: 10px 15px;
+                    background-color: #ebecec;
+                    &-title {
+                        font-size: 28px;
+                        color: #474c56;
+                        margin-bottom: 15px;
+                    }
+    
+                    &-text {
+                        font-size: 20px;
+                        color: #474c56;
+                    }
 
-                &-text {
-                    font-size: 20px;
-                    color: #474c56;
+                    @media (max-width: $media-tablet-landscape) {
+                        overflow-y: auto;
+                        max-height: 50%;
+                    }
                 }
 
                 &-img {
@@ -120,8 +128,10 @@
                 }
 
                 &-comments {
+                    background-color: #ebecec;
                     margin-top: 20px;
                     text-align: start;
+                    padding: 10px 15px;
 
                     &-title {
                         display: flex;
@@ -148,37 +158,42 @@
                             font-size: 18px;
                         }
                     }
-                }
 
-                &-msg {
-                    margin-top: 20px;
-                    text-align: start;
-
-                    &-title {
-                        display: flex;
-                        flex-direction: column;
-                        position: relative;
-                        font-size: 22px;
-                        padding: 5px;
-                        margin-bottom: 2px;
+                    &-msg {
+                        margin-top: 20px;
+                        text-align: start;
+    
+                        &-title {
+                            display: flex;
+                            flex-direction: column;
+                            position: relative;
+                            font-size: 22px;
+                            padding: 5px;
+                            margin-bottom: 2px;
+                        }
+    
+                        &-wrapper {
+                            margin-bottom: 30px;
+                            display: flex;
+                            align-items: center;
+                            textarea {
+                                resize: none;
+                                width: 90%;
+                                height: 70px;
+                                border: none;
+                                border-radius: 5px;
+                            }
+    
+                            button {
+                                background-color: #67ad45;
+                                border-radius: 0 8px 8px 0;
+                            }
+                        }
                     }
 
-                    &-wrapper {
-                        display: flex;
-                        align-items: center;
-                        textarea {
-                            resize: none;
-                            width: 90%;
-                            height: 70px;
-                            border: none;
-                            border-radius: 5px;
-                        }
-
-                        button {
-                            width: 10%;
-                            background-color: #67ad45;
-                            border-radius: 0 8px 8px 0;
-                        }
+                    @media (max-width: $media-tablet-landscape) {
+                        overflow-y: auto;
+                        max-height: 50%;
                     }
                 }
 
@@ -195,22 +210,21 @@
                 &:nth-child(2n + 1) {
                     width: 65%;
                     height: 100%;
+                    background-color: #ebecec;
                     
                     @media (max-width: $media-tablet-landscape) {
                         width: 100%;
-                        height: 65%;
+                        max-height: 50%;
                     }
                 }
 
                 &:nth-child(2n+2) {
                     width: 30%;
                     height: 100%;
-                    padding: 20px 15px;
-                    overflow-y: auto;
 
                     @media (max-width: $media-tablet-landscape) {
                         width: 100%;
-                        height: 35%;
+                        height: 45%;
                     }
                 }
             }

@@ -139,6 +139,7 @@
                     }
 
                     &-wrapper {
+                        margin-bottom: 30px;
                         display: flex;
                         align-items: center;
                         textarea {
@@ -154,7 +155,6 @@
                         }
 
                         button {
-                            width: 10%;
                             background-color: #67ad45;
                             border-radius: 0 8px 8px 0;
 
@@ -204,7 +204,7 @@
             margin: 30px auto;
 
             &-btn {
-                padding: 5px 15px;
+                padding: 2px 15px;
                 font-size: 40px;
                 color: #fff;
                 border-radius: 35px;
