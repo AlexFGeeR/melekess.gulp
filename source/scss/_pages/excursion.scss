@@ -120,6 +120,10 @@
                         width: 80%;
                     }
 
+                    &-paragraph {
+                        font-size: 20px;
+                    }
+
                     &-text {
                         max-width: 80%;
 
@@ -231,7 +235,7 @@
 
                 &-wrapper {
                     display: flex;
-                    gap: 50px;
+                    gap: 5%;
                     &-button {
                         display: flex;
                         justify-content: center;

@@ -17,6 +17,8 @@
         font-family: $font-calibri-family;
         font-size: 18px;
         color: #474c56;
+        max-height: 150px;
+        overflow-y: auto;
     }
 
     &-link {
