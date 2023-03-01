@@ -29,7 +29,20 @@
                     <div class="recommend__slider-inner-wrapper">
                         <div class="recommend__slider-slide">
                             <div class="recommend__slider-slide-wrapper">
-                                <img src="./img/recommend/markov.jpg" class="recommend__slider-slide-wrapper-img" alt="#" width="600" height="400">
+                                <!-- <img src="./img/recommend/markov.jpg" class="recommend__slider-slide-wrapper-img" alt="#" width="600" height="400"> -->
+                                <div class="recommend__slider-slide-wrapper-swiper swiper">
+                                    <div class="recommend__slider-slide-wrapper-swiper-wrapper swiper-wrapper">
+                                        <div class="swiper-slide recommend__slider-slide-wrapper-swiper-slide">
+                                            <img src="./img/recommend/markov.jpg" class="recommend__slider-slide-wrapper-swiper-slide-img" alt="#" width="600" height="400">
+                                        </div>
+                                        <div class="swiper-slide recommend__slider-slide-wrapper-swiper-slide">
+                                            <img src="./img/recommend/markov2.jpg" class="recommend__slider-slide-wrapper-swiper-slide-img" alt="#" width="600" height="400">
+                                        </div>
+                                        <div class="swiper-slide recommend__slider-slide-wrapper-swiper-slide">Slide 3</div>
+                                        <div class="swiper-slide recommend__slider-slide-wrapper-swiper-slide">Slide 4</div>
+                                    </div>
+                                    <div class="swiper-pagination recommend__slider-slide-wrapper-swiper-pagination"></div>
+                                </div>
                                 <p class="recommend__slider-slide-wrapper-meta">Памятник купцу Маркову</p>
                             </div>
                             <div class="recommend__slider-slide-wrapper">
@@ -87,7 +100,8 @@
             </div>
         </section>
     </main>
-    @@include("blocks/footer.html");
+    @@include("blocks/footer.html")
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/sliderutils.js"></script>
     <script src="./js/recommend.js"></script>
 </body>

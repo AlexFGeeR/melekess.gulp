@@ -1,5 +1,4 @@
 .recommend {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,6 +95,31 @@
                 position: relative;
                 text-align: center;
 
+                &-swiper {
+                    height: 100%;
+                    &-pagination {
+                        bottom: 7% !important;
+                        .swiper-pagination-bullet-active {
+                            background-color: #67ad45;
+                        }
+                    }
+
+                    &-slide {
+                        z-index: 0;
+                        &-img {
+                            width: auto;
+                            display: block;
+                            margin: 0 auto;
+                            height: 100%;
+        
+                            @media (max-width: $media-phone) {
+                                width: inherit;
+                            }
+                        }
+                    }
+                }
+
+
                 &-content {
                     padding: 10px 15px;
                     background-color: #ebecec;
@@ -113,17 +137,6 @@
                     @media (max-width: $media-tablet-landscape) {
                         overflow-y: auto;
                         max-height: 50%;
-                    }
-                }
-
-                &-img {
-                    width: auto;
-                    display: block;
-                    margin: 0 auto;
-                    height: 100%;
-
-                    @media (max-width: $media-phone) {
-                        width: inherit;
                     }
                 }
 
@@ -205,6 +218,7 @@
                     font-size: 18px;
                     position: absolute;
                     bottom: 0;
+                    z-index: 1;
                 }
 
                 &:nth-child(2n + 1) {

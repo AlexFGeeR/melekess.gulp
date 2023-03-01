@@ -1,3 +1,15 @@
+const slidesCount = document.querySelectorAll('.recommend__slider-slide').length;
+const swiper = new Swiper(`.recommend__slider-slide-wrapper-swiper`, {
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+    pagination: {
+        el: '.recommend__slider-slide-wrapper-swiper-pagination',
+        clickable: true,
+    },
+    centeredSlides: true,
+})
+
 createSlider('recommend__slider', {
     initialSlide: 0,
     animationDuration: 500,
